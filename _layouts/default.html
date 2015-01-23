@@ -7,7 +7,7 @@
 
     <header class="masthead">
       <div class="masthead-inner" align="center">  	      	
-		<h2>{"Image API"}</h2>      		
+		<h2>{{ site.title }}</h2>      		
     	<a href="http://bit.ly/1cHBhd5" target="_blank">
     		<img src="https://s3.amazonaws.com/kinlane-productions/api-evangelist/3scale/Winning-in-the-API-Economy-eBook-3scale.png" width="50%" style="border: 1px solid #FFF; margin-bottom: 25px;" />
     	</a>                   	      	
@@ -17,7 +17,7 @@
               <a href="index.html" id="home-nav">Home</a>
             </li>
             <li>
-              <a href="editor-image.html" id="image-editor-nav">Image</a>
+              <a href="editor-{{ site.repo }}.html" id="{{ site.repo }}-editor-nav">{{ site.resource }}</a>
             </li>    
             <li>
               <a href="editor-questions.html" id="questions-editor-nav">Questions</a>
@@ -85,7 +85,7 @@
     	
     	<p align="center">
     		<a href="http://apievangelist.com">
-    			<img src="http://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" align="center" width="60%" style="padding-bottom: 10px;" />
+    			<img src="https://kinlane-productions.s3.amazonaws.com/api-evangelist/api-evangelist-logo-400.png" align="center" width="60%" style="padding-bottom: 10px;" />
     		</a>
     	</p>
     	
@@ -177,16 +177,24 @@
 	</noscript>	
 	
   	<!-- what do we do with these? -->
-  	<script src="http://stack-network.github.io/blogapi/js/editor-apis-json.js" type="text/javascript"></script>
-  	<script src="http://stack-network.github.io/blogapi/js/editor-swagger-json.js" type="text/javascript"></script>
-  	<script src="http://stack-network.github.io/blogapi/js/editor-blog-json.js" type="text/javascript"></script>
-  	<script src="http://stack-network.github.io/blogapi/js/editor-config-json.js" type="text/javascript"></script>             	
+  	<script src="https://kin-lane.github.io/master/js/editor-apis-json.js" type="text/javascript"></script>
+  	<script src="https://kin-lane.github.io/master/js/navigator-apis-json.js" type="text/javascript"></script>
+  	<script src="https://kin-lane.github.io/master/js/editor-swagger-json.js" type="text/javascript"></script>  
+  	<script src="https://kin-lane.github.io/master/js/editor-config-json.js" type="text/javascript"></script>
+  	
+  	<script src="https://kin-lane.github.io/{{ site.repo }}/js/editor-blog-json.js" type="text/javascript"></script>
+  	             	
 	<script type="text/javascript">		
+	
 		if(document.getElementById("jsonEditor"))
 			{
 			loadPropertyTypes();	
 			loadAPIsJSONEditor();
 			}
+		if(document.getElementById("jsonNavigator"))
+			{
+			loadAPIsJSONNavigator('/{{ site.repo }}/apis.json');
+			}			
 		if(document.getElementById("swaggerEditor"))
 			{			
 			$apisjsonURL = 'definitions/swagger.json';	
