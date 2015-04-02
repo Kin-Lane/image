@@ -167,7 +167,7 @@
             "name": "image_id",
             "in": "path",
             "description": "id for the image term",
-            "required": "true",
+            "required": true,
             "type": "integer",
             "format": "id"
           }
@@ -196,7 +196,7 @@
             "name": "image_id",
             "in": "path",
             "description": "id for the image term",
-            "required": "true",
+            "required": true,
             "type": "integer",
             "format": "id"
           },
@@ -302,7 +302,7 @@
             "name": "image_id",
             "in": "path",
             "description": "id for the image term",
-            "required": "true",
+            "required": true,
             "type": "integer",
             "format": "id"
           }
@@ -522,21 +522,6 @@
         "api_count": {
           "description": "number of items api with tag",
           "type": "integer"
-        }
-      }
-    },
-    "errorModel": {
-      "required": [
-        "code",
-        "message"
-      ],
-      "properties": {
-        "code": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "message": {
-          "type": "string"
         }
       }
     }
