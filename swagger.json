@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Image",
-    "description": "This is a image api",
+    "description": "This is an API image, allowing me to add definitions for key and phrases used in the API space.",
     "termsOfService": "http://stack.network/terms-of-service.html",
     "version": "v1"
   },
@@ -17,10 +17,24 @@
   "paths": {
     "/image/": {
       "get": {
-        "summary": "retrieves all images",
-        "description": "pulls all images, with filter by keyword",
+        "summary": "retrieves all image",
+        "description": "pulls all image, with filter by keyword",
         "operationId": "getImages",
         "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the API",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the API",
+            "required": true,
+            "type": "string"
+          },
           {
             "name": "query",
             "in": "query",
@@ -41,8 +55,7 @@
           }
         },
         "tags": [
-          "image",
-          "imageging"
+          "Image"
         ]
       },
       "post": {
@@ -51,30 +64,65 @@
         "operationId": "addImage",
         "parameters": [
           {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the API",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the API",
+            "required": true,
+            "type": "string"
+          },
+          {
             "name": "name",
-            "in": "query",
+            "in": "formData",
             "description": "name of the image",
             "required": true,
             "type": "string"
           },
           {
             "name": "description",
-            "in": "query",
+            "in": "formData",
             "description": "description of the image",
             "required": true,
             "type": "string"
           },
           {
             "name": "url",
-            "in": "query",
-            "description": "url for the image",
+            "in": "formData",
+            "description": "url of the image",
             "required": true,
             "type": "string"
           },
           {
-            "name": "tags",
-            "in": "query",
-            "description": "tags for the image",
+            "name": "thumbnailUrl",
+            "in": "formData",
+            "description": "thumbnailUrl of the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "width",
+            "in": "formData",
+            "description": "width of the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "height",
+            "in": "formData",
+            "description": "height of the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "creator",
+            "in": "formData",
+            "description": "creator of the image",
             "required": true,
             "type": "string"
           }
@@ -91,23 +139,23 @@
           }
         },
         "tags": [
-          "image",
-          "imageging"
+          "Image"
         ]
       }
     },
-    "/image/{slug}": {
+    "/image/{image_id}": {
       "get": {
-        "summary": "Retrieve a image using its slug",
-        "description": "Returns the image detail",
-        "operationId": "getImage",
+        "summary": "retrieve image term",
+        "description": "retrieve image term",
+        "operationId": "getImageTerm",
         "parameters": [
           {
-            "name": "slug",
+            "name": "image_id",
             "in": "path",
-            "description": "slug for the image, notice this is in the path, not a query variable",
-            "required": true,
-            "type": "integer"
+            "description": "id for the image term",
+            "required": "true",
+            "type": "integer",
+            "format": "id"
           }
         ],
         "responses": {
@@ -122,49 +170,85 @@
           }
         },
         "tags": [
-          "image",
-          "imageging"
+          "Image"
         ]
       },
       "put": {
         "summary": "update image",
         "description": "update image",
-        "operationId": "updateImage",
+        "operationId": "updateImageTerm",
         "parameters": [
           {
-            "name": "slug",
+            "name": "image_id",
             "in": "path",
-            "description": "unique slug for the image",
+            "description": "id for the image term",
+            "required": "true",
+            "type": "integer",
+            "format": "id"
+          },
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the API",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the API",
             "required": true,
             "type": "string"
           },
           {
             "name": "name",
-            "in": "query",
+            "in": "formData",
             "description": "name of the image",
             "required": true,
             "type": "string"
           },
           {
             "name": "description",
-            "in": "query",
+            "in": "formData",
             "description": "description of the image",
             "required": true,
             "type": "string"
           },
           {
             "name": "url",
-            "in": "query",
-            "description": "url for the image",
+            "in": "formData",
+            "description": "url of the image",
             "required": true,
             "type": "string"
           },
           {
-            "name": "tags",
-            "in": "query",
-            "description": "tags for the image",
+            "name": "thumbnailUrl",
+            "in": "formData",
+            "description": "thumbnailUrl of the image",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "width",
+            "in": "formData",
+            "description": "width of the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "height",
+            "in": "formData",
+            "description": "height of the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "creator",
+            "in": "formData",
+            "description": "creator of the image",
+            "required": true,
+            "type": "string"
+          }"type": "string"
           }
         ],
         "responses": {
@@ -179,21 +263,21 @@
           }
         },
         "tags": [
-          "image",
-          "imageging"
+          "Image"
         ]
       },
       "delete": {
-        "summary": "delete image",
-        "description": "deletes an image",
-        "operationId": "deleteImage",
+        "summary": "delete image term",
+        "description": "deletes an image term",
+        "operationId": "deleteImageTerm",
         "parameters": [
           {
-            "name": "slug",
+            "name": "image_id",
             "in": "path",
-            "description": "unique slug for the image",
-            "required": true,
-            "type": "string"
+            "description": "id for the image term",
+            "required": "true",
+            "type": "integer",
+            "format": "id"
           }
         ],
         "responses": {
@@ -208,8 +292,153 @@
           }
         },
         "tags": [
-          "image",
-          "imageging"
+          "Image"
+        ]
+      }
+    },
+    "/image/{image_id}/tags/": {
+      "get": {
+        "summary": "retrieve image tags",
+        "description": "Returns the tags for an image",
+        "operationId": "getimageTags",
+        "parameters": [
+          {
+            "name": "image_id",
+            "in": "path",
+            "description": "id for image",
+            "required": true,
+            "type": "integer",
+            "format": "id"
+          },
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the image",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Image Tags Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/tag"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Tags"
+        ]
+      },
+      "post": {
+        "summary": "add tag to image",
+        "description": "add tag for image",
+        "operationId": "addImageTag",
+        "parameters": [
+          {
+            "name": "image_id",
+            "in": "path",
+            "description": "id for the image",
+            "required": true,
+            "type": "integer",
+            "format": "id"
+          },
+          {
+            "name": "appid",
+            "in": "formData",
+            "description": "your appid for accessing the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "formData",
+            "description": "your appkey for accessing the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "tag",
+            "in": "formData",
+            "description": "tag name",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Image Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/tag"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Tags"
+        ]
+      }
+    },
+    "/image/{image_id}/tags/{tag}": {
+      "delete": {
+        "summary": "delete a image tag",
+        "description": "deletes a tag applied to image",
+        "operationId": "deleteimageTag",
+        "parameters": [
+          {
+            "name": "image_id",
+            "in": "path",
+            "description": "id for the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "tag",
+            "in": "path",
+            "description": "tag to remove from image",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Image Tag Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/tag"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Tags"
         ]
       }
     }
@@ -219,7 +448,8 @@
       "properties": {
         "name": {
           "description": "name of the image",
-          "type": "string"
+          "type": "string",
+          "format": "label"
         },
         "description": {
           "description": "description of the image",
@@ -229,16 +459,45 @@
           "description": "url for the image",
           "type": "string"
         },
-        "tags": {
-          "description": "tags for the image",
-          "type": "string"
+        "thumbnailUrl": {
+          "description": "thumbnail url for the image",
+          "type": "string",
+          "format": "id"
         },
-        "slug": {
-          "description": "slug for the image",
-          "type": "string"
-        }
+        "width": {
+          "description": "width for the image",
+          "type": "string",
+          "format": "id"
+        },
+        "height": {
+          "description": "height for the image",
+          "type": "string",
+          "format": "id"
+        },
+        "creator": {
+          "description": "creator of the image",
+          "type": "string",
+          "format": "id"
+        } 
       }
     },
+    "tag": {
+      "properties": {
+        "tag_id": {
+          "description": "id for the tag",
+          "type": "integer",
+          "format": "id"
+        },
+        "tag": {
+          "description": "text tag",
+          "type": "string"
+        },
+        "api_count": {
+          "description": "number of items api with tag",
+          "type": "integer"
+        }
+      }
+    },    
     "errorModel": {
       "required": [
         "code",
