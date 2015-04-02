@@ -162,7 +162,7 @@
             "description": "your appkey for accessing the API",
             "required": true,
             "type": "string"
-          },        
+          },
           {
             "name": "image_id",
             "in": "path",
@@ -262,7 +262,6 @@
             "description": "creator of the image",
             "required": true,
             "type": "string"
-          }"type": "string"
           }
         ],
         "responses": {
@@ -298,7 +297,7 @@
             "description": "your appkey for accessing the API",
             "required": true,
             "type": "string"
-          },        
+          },
           {
             "name": "image_id",
             "in": "path",
@@ -506,7 +505,7 @@
           "description": "creator of the image",
           "type": "string",
           "format": "id"
-        } 
+        }
       }
     },
     "tag": {
@@ -525,7 +524,7 @@
           "type": "integer"
         }
       }
-    },    
+    },
     "errorModel": {
       "required": [
         "code",
