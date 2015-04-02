@@ -39,7 +39,7 @@
             "name": "query",
             "in": "query",
             "description": "a text query to search across image",
-            "required": true,
+            "required": false,
             "type": "string"
           }
         ],
