@@ -15,7 +15,7 @@
     "application/json"
   ],
   "paths": {
-    "/image/": {
+    "/images/": {
       "get": {
         "summary": "retrieves all image",
         "description": "pulls all image, with filter by keyword",
@@ -49,7 +49,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/image"
+                "$ref": "#/definitions/images"
               }
             }
           }
@@ -133,7 +133,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/image"
+                "$ref": "#/definitions/images"
               }
             }
           }
@@ -143,7 +143,7 @@
         ]
       }
     },
-    "/image/{image_id}": {
+    "/images/{image_id}": {
       "get": {
         "summary": "retrieve image term",
         "description": "retrieve image term",
@@ -178,7 +178,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/image"
+                "$ref": "#/definitions/images"
               }
             }
           }
@@ -270,7 +270,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/image"
+                "$ref": "#/definitions/images"
               }
             }
           }
@@ -313,7 +313,7 @@
             "schema": {
               "type": "array",
               "items": {
-                "$ref": "#/definitions/image"
+                "$ref": "#/definitions/images"
               }
             }
           }
@@ -323,7 +323,7 @@
         ]
       }
     },
-    "/image/{image_id}/tags/": {
+    "/images/{image_id}/tags/": {
       "get": {
         "summary": "retrieve image tags",
         "description": "Returns the tags for an image",
@@ -418,7 +418,7 @@
         ]
       }
     },
-    "/image/{image_id}/tags/{tag}": {
+    "/images/{image_id}/tags/{tag}": {
       "delete": {
         "summary": "delete a image tag",
         "description": "deletes a tag applied to image",
