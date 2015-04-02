@@ -150,6 +150,20 @@
         "operationId": "getImageTerm",
         "parameters": [
           {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the API",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the API",
+            "required": true,
+            "type": "string"
+          },        
+          {
             "name": "image_id",
             "in": "path",
             "description": "id for the image term",
@@ -271,6 +285,20 @@
         "description": "deletes an image term",
         "operationId": "deleteImageTerm",
         "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the API",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the API",
+            "required": true,
+            "type": "string"
+          },        
           {
             "name": "image_id",
             "in": "path",
