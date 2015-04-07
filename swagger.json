@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Image",
+    "title": "Images",
     "description": "This is an API image, allowing me to add definitions for key and phrases used in the API space.",
     "termsOfService": "http://stack.network/terms-of-service.html",
     "version": "v1"
@@ -55,7 +55,7 @@
           }
         },
         "tags": [
-          "Image"
+          "Images"
         ]
       },
       "post": {
@@ -139,7 +139,7 @@
           }
         },
         "tags": [
-          "Image"
+          "Images"
         ]
       }
     },
@@ -184,7 +184,7 @@
           }
         },
         "tags": [
-          "Image"
+          "Images"
         ]
       },
       "put": {
@@ -276,7 +276,7 @@
           }
         },
         "tags": [
-          "Image"
+          "Images"
         ]
       },
       "delete": {
@@ -319,7 +319,7 @@
           }
         },
         "tags": [
-          "Image"
+          "Images"
         ]
       }
     },
