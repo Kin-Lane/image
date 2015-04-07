@@ -9,7 +9,7 @@
   "host": "image.api.kinlane.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "produces": [
     "application/json"
@@ -17,8 +17,8 @@
   "paths": {
     "/images/": {
       "get": {
-        "summary": "retrieves all image",
-        "description": "pulls all image, with filter by keyword",
+        "summary": "get images",
+        "description": "all images",
         "operationId": "getImages",
         "parameters": [
           {
@@ -60,7 +60,7 @@
       },
       "post": {
         "summary": "add image",
-        "description": "add a new image",
+        "description": "add image",
         "operationId": "addImage",
         "parameters": [
           {
@@ -145,9 +145,9 @@
     },
     "/images/{image_id}/": {
       "get": {
-        "summary": "retrieve image term",
-        "description": "retrieve image term",
-        "operationId": "getImageTerm",
+        "summary": "get image",
+        "description": "get image",
+        "operationId": "getImage",
         "parameters": [
           {
             "name": "appid",
@@ -190,7 +190,7 @@
       "put": {
         "summary": "update image",
         "description": "update image",
-        "operationId": "updateImageTerm",
+        "operationId": "updateImage",
         "parameters": [
           {
             "name": "image_id",
@@ -280,9 +280,9 @@
         ]
       },
       "delete": {
-        "summary": "delete image term",
-        "description": "deletes an image term",
-        "operationId": "deleteImageTerm",
+        "summary": "delete image",
+        "description": "delete image",
+        "operationId": "deleteImage",
         "parameters": [
           {
             "name": "appid",
@@ -325,8 +325,8 @@
     },
     "/images/{image_id}/tags/": {
       "get": {
-        "summary": "retrieve image tags",
-        "description": "Returns the tags for an image",
+        "summary": "get image tags",
+        "description": "get image tags",
         "operationId": "getimageTags",
         "parameters": [
           {
@@ -368,8 +368,8 @@
         ]
       },
       "post": {
-        "summary": "add tag to image",
-        "description": "add tag for image",
+        "summary": "add image tag",
+        "description": "add image tag",
         "operationId": "addImageTag",
         "parameters": [
           {
@@ -420,9 +420,9 @@
     },
     "/images/{image_id}/tags/{tag}/": {
       "delete": {
-        "summary": "delete a image tag",
-        "description": "deletes a tag applied to image",
-        "operationId": "deleteimageTag",
+        "summary": "delete image tag",
+        "description":"delete image tag",
+        "operationId": "deleteImageTag",
         "parameters": [
           {
             "name": "image_id",
