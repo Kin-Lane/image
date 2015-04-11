@@ -473,6 +473,11 @@
   "definitions": {
     "image": {
       "properties": {
+        "image_id": {
+          "description": "id for the image",
+          "type": "integer",
+          "format": "id"
+        }      
         "name": {
           "description": "name of the image",
           "type": "string",
