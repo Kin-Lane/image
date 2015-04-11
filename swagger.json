@@ -88,42 +88,42 @@
             "name": "description",
             "in": "formData",
             "description": "description of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "imageUrl",
             "in": "formData",
             "description": "url of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "thumbnailUrl",
             "in": "formData",
             "description": "thumbnailUrl of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "width",
             "in": "formData",
             "description": "width of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "height",
             "in": "formData",
             "description": "height of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "creator",
             "in": "formData",
             "description": "creator of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           }
         ],
@@ -218,49 +218,49 @@
             "name": "name",
             "in": "formData",
             "description": "name of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "description",
             "in": "formData",
             "description": "description of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "imageUrl",
             "in": "formData",
             "description": "url of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "thumbnailUrl",
             "in": "formData",
             "description": "thumbnailUrl of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "width",
             "in": "formData",
             "description": "width of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "height",
             "in": "formData",
             "description": "height of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           },
           {
             "name": "creator",
             "in": "formData",
             "description": "creator of the image",
-            "required": true,
+            "required": false,
             "type": "string"
           }
         ],
