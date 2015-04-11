@@ -470,7 +470,7 @@
       }
     },
     "/images/sync/amazons3/": {
-      "delete": {
+      "get": {
         "summary": "sync amazon s3",
         "description":"sync amazon s3",
         "operationId": "syncAmazonS3",
