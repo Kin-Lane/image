@@ -468,7 +468,44 @@
           "Tags"
         ]
       }
-    }
+    },
+    "/images/sync/amazons3/": {
+      "delete": {
+        "summary": "sync amazon s3",
+        "description":"sync amazon s3",
+        "operationId": "syncAmazonS3",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "your appid for accessing the image",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "your appkey for accessing the image",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Sync Amazon S3 Response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/tag"
+              }
+            }
+          }
+        },
+        "tags": [
+          "Tags"
+        ]
+      }
+    }    
   },
   "definitions": {
     "image": {
