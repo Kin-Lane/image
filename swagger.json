@@ -488,6 +488,20 @@
             "description": "your appkey for accessing the image",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "bucket",
+            "in": "query",
+            "description": "bucket to sync with",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "prefix",
+            "in": "query",
+            "description": "prefix (folder) to sync with",
+            "required": true,
+            "type": "string"
           }
         ],
         "responses": {
