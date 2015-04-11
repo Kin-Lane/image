@@ -477,7 +477,7 @@
           "description": "id for the image",
           "type": "integer",
           "format": "id"
-        }      
+        },  
         "name": {
           "description": "name of the image",
           "type": "string",
