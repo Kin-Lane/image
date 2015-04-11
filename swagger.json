@@ -92,7 +92,7 @@
             "type": "string"
           },
           {
-            "name": "url",
+            "name": "imageUrl",
             "in": "formData",
             "description": "url of the image",
             "required": true,
@@ -229,7 +229,7 @@
             "type": "string"
           },
           {
-            "name": "url",
+            "name": "imageUrl",
             "in": "formData",
             "description": "url of the image",
             "required": true,
@@ -487,7 +487,7 @@
           "description": "description of the image",
           "type": "string"
         },
-        "url": {
+        "imageUrl": {
           "description": "url for the image",
           "type": "string"
         },
