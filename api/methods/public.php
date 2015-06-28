@@ -1,3 +1,3 @@
 <?php
-require-once('m-images-get.php');
+require_once('m-images-get.php');
 ?>
