@@ -1,178 +1,412 @@
 {
-	"id": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
+	"id": "564dff58-3919-4a13-8194-48d5a352615a",
 	"name": "Images",
-	"description": "",
-	"order": [
-		"8cacea09-954d-4944-af89-3cd7b2b6d1f6",
-		"93783e3f-b7d3-40d7-a91b-c6d1f251f20c",
-		"177b83b8-e4e6-4baf-88c6-fe3324eae6ec",
-		"11b41aad-6379-4b6e-a490-ea3bcec0121a",
-		"6d4f4843-93e0-4a9b-a9d0-1aa34c594df7",
-		"85e4390a-53bc-45df-86ff-1ac45a3866bc",
-		"a74ecfc4-c406-4222-be84-fa74710167f0",
-		"1aa22a44-9c52-4683-a480-11d5e8d10e15"
+	"description": "This is an API image, allowing me to add definitions for key and phrases used in the API space.",
+	"order": [],
+	"folders": [
+		{
+			"id": "58e85b96-b5fa-4795-8d27-7f2302fcd423",
+			"name": "images",
+			"description": "Folder for images",
+			"order": [
+				"fd92dc66-ed27-4364-a003-d650a65e925b",
+				"d933f95a-6589-4f46-ac47-391b0d73cd5b",
+				"c3a89387-e128-4b8c-bcb3-46bdeb74b59e",
+				"a289d8e3-66d5-4922-b934-ad24020ed219",
+				"6cfc538e-3250-44e0-a692-5f5393cda80a",
+				"2854209b-5f78-4e6a-b0fe-7195d69fe739",
+				"4d7e5f34-bf77-408a-96d4-e82c12d5dce1",
+				"4dfce240-c643-4feb-89ba-eb606cb8b227",
+				"85cd26d5-9583-4f05-8c3c-b6b526aba5d9"
+			],
+			"collection_name": "Images",
+			"collection_id": "564dff58-3919-4a13-8194-48d5a352615a",
+			"collection": "564dff58-3919-4a13-8194-48d5a352615a",
+			"owner": "27278"
+		}
 	],
-	"folders": [],
-	"timestamp": 1428386964345,
-	"synced": false,
+	"timestamp": 1413302258635,
 	"owner": "27278",
-	"sharedWithTeam": false,
-	"subscribed": false,
-	"remoteLink": "",
-	"public": false,
-	"write": true,
+	"hasRequests": true,
+	"synced": false,
 	"requests": [
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "get image\n\nParameters:\n\nimage_id: id for the image term \n\n",
-			"data": [],
+			"id": "2854209b-5f78-4e6a-b0fe-7195d69fe739",
 			"headers": "",
-			"id": "11b41aad-6379-4b6e-a490-ea3bcec0121a",
-			"method": "get",
-			"name": "getImage",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/{{image_id}}/tags/?appid={{appid}}&appkey={{appkey}}&",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "get image tags",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964349,
-			"url": "image.api.kinlane.com/images/:image_id/?appid=&appkey=",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "get image tags",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "delete image\n\nParameters:\n\nimage_id: id for the image term \n\n",
-			"data": [],
+			"id": "4d7e5f34-bf77-408a-96d4-e82c12d5dce1",
 			"headers": "",
-			"id": "177b83b8-e4e6-4baf-88c6-fe3324eae6ec",
-			"method": "delete",
-			"name": "deleteImage",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/{{image_id}}/tags/",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "appid",
+					"value": "{{appid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "appkey",
+					"value": "{{appkey}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tag",
+					"value": "{{tag}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "add image tag",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964348,
-			"url": "image.api.kinlane.com/images/?appid=&appkey=",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "add image tag",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "delete image tag\n\nParameters:\n\nimage_id: id for the image \n\ntag: tag to remove from image \n\n",
-			"data": [],
+			"id": "4dfce240-c643-4feb-89ba-eb606cb8b227",
 			"headers": "",
-			"id": "1aa22a44-9c52-4683-a480-11d5e8d10e15",
-			"method": "delete",
-			"name": "deleteImageTag",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/{{image_id}}/tags/{tag}/?appid={{appid}}&appkey={{appkey}}&",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete image tag",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964349,
-			"url": "image.api.kinlane.com/images/:image_id/tags/?appid=&appkey=",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "delete image tag",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "update image\n\nParameters:\n\nimage_id: id for the image term \n\n",
-			"data": [],
+			"id": "6cfc538e-3250-44e0-a692-5f5393cda80a",
 			"headers": "",
-			"id": "6d4f4843-93e0-4a9b-a9d0-1aa34c594df7",
-			"method": "put",
-			"name": "updateImage",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/{{image_id}}/?appid={{appid}}&appkey={{appkey}}&",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "delete image",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964349,
-			"url": "image.api.kinlane.com/images/:image_id/",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "delete image",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "get image tags\n\nParameters:\n\nimage_id: id for image \n\n",
-			"data": [],
+			"id": "85cd26d5-9583-4f05-8c3c-b6b526aba5d9",
 			"headers": "",
-			"id": "85e4390a-53bc-45df-86ff-1ac45a3866bc",
-			"method": "get",
-			"name": "getimageTags",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/sync/amazons3/?appid={{appid}}&appkey={{appkey}}&bucket={{bucket}}&prefix={{prefix}}&",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "sync amazon s3",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964349,
-			"url": "image.api.kinlane.com/images/:image_id/?appid=&appkey=",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "sync amazon s3",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "get images",
-			"data": [],
+			"id": "a289d8e3-66d5-4922-b934-ad24020ed219",
 			"headers": "",
-			"id": "8cacea09-954d-4944-af89-3cd7b2b6d1f6",
-			"method": "get",
-			"name": "getImages",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/{{image_id}}/",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "appid",
+					"value": "{{appid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "appkey",
+					"value": "{{appkey}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "{{description}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "imageUrl",
+					"value": "{{imageUrl}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "thumbnailUrl",
+					"value": "{{thumbnailUrl}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "width",
+					"value": "{{width}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "height",
+					"value": "{{height}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "creator",
+					"value": "{{creator}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "update image",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964348,
-			"url": "image.api.kinlane.com/images/?appid=&appkey=&query=",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "update image",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
+			"id": "c3a89387-e128-4b8c-bcb3-46bdeb74b59e",
+			"headers": "",
+			"url": "http://image.api.kinlane.com//images/{{image_id}}/?appid={{appid}}&appkey={{appkey}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
 			"dataMode": "params",
+			"description": "get image",
 			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "get image",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
+		},
+		{
+			"id": "d933f95a-6589-4f46-ac47-391b0d73cd5b",
+			"headers": "",
+			"url": "http://image.api.kinlane.com//images/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "appid",
+					"value": "{{appid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "appkey",
+					"value": "{{appkey}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "{{description}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "imageUrl",
+					"value": "{{imageUrl}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "thumbnailUrl",
+					"value": "{{thumbnailUrl}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "width",
+					"value": "{{width}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "height",
+					"value": "{{height}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "creator",
+					"value": "{{creator}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
 			"description": "add image",
-			"data": [],
-			"headers": "",
-			"id": "93783e3f-b7d3-40d7-a91b-c6d1f251f20c",
-			"method": "post",
-			"name": "addImage",
-			"preRequestScript": "",
-			"pathVariables": {},
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964348,
-			"url": "image.api.kinlane.com/images/",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "add image",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		},
 		{
-			"collectionId": "686ac8a6-f96f-40cf-a668-e3bf43bdc9be",
-			"dataMode": "params",
-			"descriptionFormat": "html",
-			"description": "add image tag\n\nParameters:\n\nimage_id: id for the image \n\n",
-			"data": [],
+			"id": "fd92dc66-ed27-4364-a003-d650a65e925b",
 			"headers": "",
-			"id": "a74ecfc4-c406-4222-be84-fa74710167f0",
-			"method": "post",
-			"name": "addImageTag",
-			"preRequestScript": "",
+			"url": "http://image.api.kinlane.com//images/?appid={{appid}}&appkey={{appkey}}&query={{query}}&",
 			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "all images",
+			"descriptionFormat": "html",
+			"time": 1435472527228,
+			"version": 2,
 			"responses": [],
-			"synced": false,
 			"tests": "",
-			"time": 1428386964349,
-			"url": "image.api.kinlane.com/images/:image_id/tags/",
-			"owner": "27278"
+			"collectionId": "564dff58-3919-4a13-8194-48d5a352615a",
+			"synced": false,
+			"name": "get images",
+			"owner": "27278",
+			"folder": "58e85b96-b5fa-4795-8d27-7f2302fcd423"
 		}
 	]
 }
