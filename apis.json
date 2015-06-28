@@ -8,7 +8,7 @@
     "Image"
   ],
   "created": "2015-01-22",
-  "modified": "2015-01-22",
+  "modified": "2015-06-27",
   "url": "https://kin-lane.github.io/image/apis.json",
   "SpecificationVersion": "0.14",
   "apis": [
@@ -31,7 +31,15 @@
         {
           "type": "x-postman",
           "url": "https://kin-lane.github.io/image/postman.json"
-        }        
+        },
+        {
+          "type": "x-apimatic-sdks",
+          "url": "https://kin-lane.github.io/image/code/"
+        },
+        {
+          "type": "x-api-science",
+          "url": "https://kin-lane.github.io/image/status/"
+        }
       ],
       "contact": [
         {
@@ -46,15 +54,15 @@
     {
       "name": "API API (Inception)",
       "url": "https://kin-lane.github.io/api/apis.json"
-    },   
+    },
     {
       "name": "Audio API",
       "url": "https://kin-lane.github.io/audio/apis.json"
     },
     {
       "name": "Blog API",
-      "url": "https://kin-lane.github.io/blog/apis.json"
-    },    
+      "url": "https://kin-lane.github.io/image/apis.json"
+    },
     {
       "name": "Comment API",
       "url": "https://kin-lane.github.io/comment/apis.json"
@@ -62,15 +70,15 @@
     {
       "name": "Curated API",
       "url": "https://kin-lane.github.io/curated/apis.json"
-    },     
+    },
     {
       "name": "Glossary API",
       "url": "https://kin-lane.github.io/glossary/apis.json"
-    },     
+    },
     {
       "name": "Job API",
       "url": "https://kin-lane.github.io/job/apis.json"
-    },     
+    },
     {
       "name": "Link API",
       "url": "https://kin-lane.github.io/link/apis.json"
@@ -82,7 +90,7 @@
     {
       "name": "Organization API",
       "url": "https://kin-lane.github.io/organization/apis.json"
-    },     
+    },
     {
       "name": "Page API",
       "url": "https://kin-lane.github.io/page/apis.json"
@@ -90,11 +98,11 @@
     {
       "name": "Patent API",
       "url": "https://kin-lane.github.io/patent/apis.json"
-    },    
+    },
     {
       "name": "People API",
       "url": "https://kin-lane.github.io/people/apis.json"
-    },     
+    },
     {
       "name": "Project API",
       "url": "https://kin-lane.github.io/project/apis.json"
@@ -102,15 +110,15 @@
     {
       "name": "Tag API",
       "url": "https://kin-lane.github.io/tag/apis.json"
-    },      
+    },
     {
       "name": "Tool API",
       "url": "https://kin-lane.github.io/tool/apis.json"
-    },         
+    },
     {
       "name": "Video API",
       "url": "https://kin-lane.github.io/video/apis.json"
-    }      
+    }
   ],
   "maintainers": [
     {
