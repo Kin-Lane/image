@@ -56,6 +56,14 @@
         },
         "tags": [
           "Images"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       },
       "post": {
@@ -140,6 +148,14 @@
         },
         "tags": [
           "Images"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       }
     },
@@ -185,6 +201,14 @@
         },
         "tags": [
           "Images"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       },
       "put": {
@@ -277,6 +301,14 @@
         },
         "tags": [
           "Images"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       },
       "delete": {
@@ -320,6 +352,14 @@
         },
         "tags": [
           "Images"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       }
     },
@@ -365,6 +405,14 @@
         },
         "tags": [
           "Tags"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       },
       "post": {
@@ -415,6 +463,14 @@
         },
         "tags": [
           "Tags"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       }
     },
@@ -466,6 +522,14 @@
         },
         "tags": [
           "Tags"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       }
     },
@@ -517,9 +581,29 @@
         },
         "tags": [
           "Sync"
+        ],
+        "security": [
+          {
+            "appid": []
+          },
+          {
+            "appkey": []
+          }
         ]
       }
-    }    
+    }
+  },
+  "securityDefinitions": {
+    "appid": {
+      "type": "apiKey",
+      "name": "appid",
+      "in": "query"
+    },
+    "appkey": {
+      "type": "apiKey",
+      "name": "appkey",
+      "in": "query"
+    }
   },
   "definitions": {
     "image": {
@@ -528,7 +612,7 @@
           "description": "id for the image",
           "type": "integer",
           "format": "id"
-        },  
+        },
         "name": {
           "description": "name of the image",
           "type": "string",
