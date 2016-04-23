@@ -1,4 +1,4 @@
-[{
+{
 	"name": "Kin Lane Image API",
 	"description": "If you follow my work you know I use a lot of photos across my network, and this is the API I am using to help pull it together, across the images I host with websites, on Amazon S3, and Flickr. I'm working to centrally organize them, and standardize how I use across my sites. This is a lesser priority for me, so it has a lot of work to be done yet.",
 	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-images.png",
@@ -6,7 +6,7 @@
 	"tags": ["Kin Lane Image API"],
 	"created": "2016-04-04",
 	"modified": "2016-04-04",
-	"url": "https://kin-lane.github.io/image/"
+	"url": "https://kin-lane.github.io/image/",
 	"specificationVersion": "0.14",
 	"apis": [{
 		"name": "Kin Lane Image API",
@@ -117,4 +117,4 @@
 		"x-twitter": "apievangelist",
 		"email": "info@apievangelist.com"
 	}]
-}]
+}
